@@ -1,0 +1,171 @@
+
+
+<html>
+
+    <head>
+    
+      <link rel="stylesheet" href="Css/contact.css">
+      <script src="js/jquery-3.5.1.min.js"></script>
+    </head>
+    
+    <body >
+      <section class="header">
+        <ul class="topnav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">BLOGS</a></li>
+            <li><a href="portfolio.html" > Student Portfolio</a></li>
+            <li><a href="#" class="active">Contact</a></li>
+        </ul>
+        <section class='section-b'>
+          <div class="side-bar"style="background-color:   #f3e94c;">
+            <h1>Contact Us</h1>
+            <p style="font-size: 20px; color: black;">If you are facing any problem or having any other query than you can contact as at +91-9855076655 <br> or <br>Fill your details, we will contact you soon.</p>
+          </div>
+    
+          <div class='form-bar'>
+            <div class="form-content">
+    
+            <h2>Fill this form</h2>
+            <input type="text" name="name" class="form-control" required placeholder="Name" onkeyup="validateName()" id='Name'>
+             <span class='error-message' id='name-error'></span>
+            <input type="tel" id="Mobile" onkeyup="validatePhone()" class="form-control"  name="phone" placeholder="Mobile No." pattern="[0-9]{10}"  required>
+            <span class='error-message' id='phone-error'></span>
+            <input type="email"class="form-control" onkeyup='validateEmail()'  id="Email" name="email" required placeholder="Email">
+            <span class='error-message' id='email-error'></span>
+            <input type="text" onkeyup='validateMessage()' id="Email" name="message" placeholder="Message" required>
+            <span class='error-message' id='message-error'></span>
+            <button id="btn1" onclick='return validateForm()'>Submit</button>
+            <p id="submit-error" class='error-message'></p>
+            <script>
+             
+
+
+    function validateName() {
+
+      var name = document.getElementById('Name').value;
+
+      if(name.length == 0) {
+
+        producePrompt('Name is required', 'name-error' , 'red')
+        return false;
+
+    }
+
+    if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+
+        producePrompt('First and last name, please.','name-error', 'red');
+        return false;
+
+    }
+
+    producePrompt('Valid', 'name-error', 'green');
+    return true;
+
+}
+
+function validatePhone() {
+
+  var phone = document.getElementById('Mobile').value;
+
+  if(phone.length == 0) {
+      producePrompt('Phone number is required.', 'phone-error', 'red');
+      return false;
+  }
+
+  if(phone.length != 10) {
+      producePrompt('Include area code.', 'phone-error', 'red');
+      return false;
+  }
+
+  if(!phone.match(/^[0-9]{10}$/)) {
+      producePrompt('Only digits, please.' ,'phone-error', 'red');
+      return false;
+  }
+
+  producePrompt('Valid', 'phone-error', 'green');
+  return true;
+
+}
+
+function validateEmail () {
+
+  var email = document.getElementById("Email").value;
+
+  if(email.length == 0) {
+
+    producePrompt('Email Invalid','email-error', 'red');
+    return false;
+
+}
+
+if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+
+    producePrompt('Email Invalid', 'email-error', 'red');
+    return false;
+
+}
+
+producePrompt('Valid', 'email-error', 'green');
+return true;
+
+}
+
+function validateMessage() {
+  var message = document.getElementById('contact-message').value;
+  var required = 30;
+  var left = required - message.length;
+
+  if (left > 0) {
+    producePrompt(left + ' more characters required','message-error','red');
+    return false;
+}
+
+producePrompt('Valid', 'message-error', 'green');
+return true;
+
+}
+
+function validateForm() {
+  if (!validateName() || !validatePhone() || !validateEmail() || !validateMessage()) {
+    jsShow('submit-error');
+    producePrompt('Please fix errors to submit.', 'submit-error', 'red');
+    setTimeout(function(){jsHide('submit-error');}, 2000);
+    return false;
+}
+else {
+
+}
+
+
+
+               
+              }
+              function jsShow(id) {
+  document.getElementById(id).style.display = 'block';
+}
+
+function jsHide(id) {
+  document.getElementById(id).style.display = 'none';
+}
+
+
+function producePrompt(message, promptLocation, color) {
+
+  document.getElementById(promptLocation).innerHTML = message;
+  document.getElementById(promptLocation).style.color = color;
+
+}
+      $("#btn1").click(function () {
+        alert("succesfully submit!!");
+      })
+           // }
+            </script>
+          </div>
+          </div>
+        
+      </section>
+    </section>
+    
+    </body>
+    
+    </html>

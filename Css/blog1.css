@@ -1,0 +1,34 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 5rem; margin-right: 10rem;
+  }
+  
+  li {
+    float: left;
+    color: BLACK;
+    text-align: center;
+    padding: 7px 10px;
+    text-decoration: none;
+  }
+
+  
+  @media only screen and (max-width: 375px) {
+
+    li{
+        padding: 2px;
+        float: left;
+    }
+    select{
+        height:20px;
+    }
+   .main{
+       margin-left:0rem;
+   }
+   .card{
+     margin-left: 2px;
+   }
+  }
+  

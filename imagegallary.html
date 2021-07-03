@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/ImageGalary.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Imge Galary</title>
+</head>
+<body>
+    <h1>Image-Gallary</h1>
+    <div class="galary">
+      <a href="images/image1.jpg" data-ligtbox="mygallery"><img src="images/image1.jpg"></a>
+       <a href="images/image2.jpg"data-ligtbox="mygallery"><img src="images/image2.jpg"></a>
+       <a href="images/image3.jpg" data-ligtbox="mygallery"> <img src="images/image3.jpg"></a>
+       <a href="images/image4.jpg" data-ligtbox="mygallery"><img src="images/image4.jpg"></a>
+       <a href="images/image5.jpg" data-ligtbox="mygallery"><img src="images/image5.jpg"></a>
+        <a href="images/image6.jpg" data-ligtbox="mygallery"><img src="images/image6.jpg"></a>
+       <a href="images/image7.jpg" data-ligtbox="mygallery"><img src="images/image7.jpg"></a>
+       <a href="images/image8.jpg" data-ligtbox="mygallery"> <img src="images/image8.jpg"></a>
+        <a href="images/image9.jpg" data-ligtbox="mygallery"><img src="images/image9.jpg"></a>
+        <a href="images/image10.jpg" data-ligtbox="mygallery"><img src="images/image10.jpg"></a>
+        <a href="images/image11.jpg" data-ligtbox="mygallery"><img src="images/image11.jpg"></a>
+        <a href="images/image12.jpg" data-ligtbox="mygallery"><img src="images/image12.jpg"></a>
+
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js" integrity="sha512-C1zvdb9R55RAkl6xCLTPt+Wmcz6s+ccOvcr6G57lbm8M2fbgn2SUjUJbQ13fEyjuLViwe97uJvwa1EUf4F1Akw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function(){
+            $(".galary").magnificPopup({
+                type:"image",
+                delegate:"a",
+                gallery :{
+                   enabled:true
+                }
+            })
+        })
+
+        </script>
+    
+</body>
+</html>

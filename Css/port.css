@@ -1,0 +1,32 @@
+body{
+    background-color:cadetblue;
+}
+.main{
+    height:10rem;
+    width:100%;
+    background-color:rgb(169, 223, 223);
+    margin: 4px;
+}
+.child1{
+    height:20px;
+    width:100%;
+    background-color:darkred;
+}
+.child2{
+    height:25px;
+    width:100%;
+    background-color:rgb(20, 68, 20);
+    color:white;
+    text-align: center;
+}
+.btn1{
+    align-items: center;
+    border-radius: 15px;
+    height:30px;
+    margin-left: 40%;
+}
+tr{
+    border:1px solid rgb(94, 32, 32);
+    
+    text-align: center;
+}

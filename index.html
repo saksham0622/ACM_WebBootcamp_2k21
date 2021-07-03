@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>website</title>
+  <link rel="stylesheet" href="Css/CSS.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+  
+  
+   <div class="container" style="background-color: antiquewhite;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> <img src="images/cu-logo.png" style="height:70px ;width: 100%;"></a>
+        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand" href="blog.html">Blogs</a>
+        <a class="navbar-brand" href="contact.html">Contact</a>
+        <a class="navbar-brand" href="imagegallary.html">Image Gallery</a>
+        <a class="navbar-brand" href="portfolio1.html">Student Portfolio</a>
+      </div>
+    </nav>
+  </div>
+
+  
+    <div class="nav-image1">
+      <img src="images/Chitkara-University-1.jpg">
+
+    </div>
+    <hr>
+    <section id="section-c">
+      <h3>Explore by Interest</h3>
+          <div class="row">
+              <!-- 1 -->
+              <div class="column">
+                  <img src="images/student.jpg" alt="" width="300" height="300">
+                 
+                  <div class="overlay">
+                      <div class="text" style="font-size: 40px;">education
+                         
+                      </div>
+                  </div>
+                  
+              </div>
+  
+              <!-- 2 -->
+              <div class="column">
+                  <img src="images/party.jpg" alt="img-2" width="300" height="300">
+                  <div class="overlay">
+                      <div class="text" style="font-size: 40px;">parties
+                         
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- 3 -->
+              <div class="column">
+                  <img src="images/party1.jpg" alt="img-3" width="300" height="300">
+                  <div class="overlay">
+                      <div class="text" style="font-size: 40px;">fairwell
+                         
+                      </div>
+                  </div>
+              </div>
+              <!-- 4 -->
+              <div class="column">
+                  <img src="images/student1.jpg" alt="img-3" width="300" height="300">
+                  <div class="overlay">
+                      <div class="text" style="font-size: 40px;">webinar
+                         
+                  </div>
+              </div>
+          </div>
+          </section>
+<hr>
+<div class="logo">
+  <span>all right reserved   2021</span>
+
+<!-- Facebook -->
+<a  href="#" class="fa fa-facebook logos">
+ 
+</a>
+<!-- Twitter -->
+<a class="fa fa-twitter logos" href="#">
+ 
+</a>
+<!-- Google +-->
+<a class="fa fa-google logos" href="#">
+ 
+</a>
+<!--Linkedin -->
+<a class="fa fa-linkedin logos" href="#">
+ 
+</a>
+<!--Instagram-->
+<a class="fa fa-instagram logos" href="#">
+ 
+</a>
+<!--Pinterest-->
+<a class="fa fa-pinterest logos" href="#">
+
+</a>
+</div>
+
+
+  </div>
+  <!-- footer section -->
+  <div class="footer" >
+    <div class="foot-text" >
+      <div class="partnership">
+        <h1>Partnerships</h1>
+        <h3>Website</h3>
+        <h3>Social Media</h3>
+       
+      </div>
+      <div class="partnership">
+        <h1>About Us</h1>
+        <h3>Our Project</h3>
+        <h3>Careers Options</h3>
+
+
+      </div>
+      <div class="partnership">
+        <h1>Supports</h1>
+        <h3>Support</h3>
+        <h3>Requests</h3>
+
+      </div>
+      <div class="partnership">
+        <h1>REVIEWS</h1>
+        <div class="stars">
+          <i class = "fa fa-star" aria-hidden = "true" id = "st1"></i>
+          <i class = "fa fa-star" aria-hidden = "true" id = "st2"></i>
+          <i class = "fa fa-star" aria-hidden = "true" id = "st3"></i>
+          <i class = "fa fa-star" aria-hidden = "true" id = "st4"></i>
+          <i class = "fa fa-star" aria-hidden = "true" id = "st5"></i>
+         
+        </div>
+        <textarea name="Message" id="textarea" cols="25" rows="8"></textarea>
+      </div>
+    
+    </div>
+   
+  </div>
+
+
+ <script>
+   $(document).ready(function() {
+          $("#st1").click(function() {
+              $(".fa-star").css("color", "black");
+              $("#st1").css("color", "yellow");
+
+          });
+          $("#st2").click(function() {
+              $(".fa-star").css("color", "black");
+              $("#st1, #st2").css("color", "yellow");
+
+          });
+          $("#st3").click(function() {
+              $(".fa-star").css("color", "black")
+              $("#st1, #st2, #st3").css("color", "yellow");
+
+          });
+          $("#st4").click(function() {
+              $(".fa-star").css("color", "black");
+              $("#st1, #st2, #st3, #st4").css("color", "yellow");
+
+          });
+          $("#st5").click(function() {
+              $(".fa-star").css("color", "black");
+              $("#st1, #st2, #st3, #st4, #st5").css("color", "yellow");
+
+          });
+        });
+
+ </script>
+</body>
+
+</html>

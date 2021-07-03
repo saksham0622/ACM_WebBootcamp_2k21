@@ -1,0 +1,150 @@
+/* Header part CSS */
+body{
+    background-color:rgb(206, 205, 204);
+}
+/* Tag selector */
+/* button{
+    padding:1rem 3rem;
+    font-size:1.2rem;
+    background-color: purple;
+    color:aliceblue;
+    
+} */
+/* Class selector */
+.details div {
+    display: flex;
+    justify-content: space-around;
+  }
+.fa-star {
+    font-size : 50px;
+    align-content: center;
+}
+.header{
+    position:relative;
+}
+.nav-image1 img{
+    padding-top:4rem;
+    width:100%;
+    height:25rem;
+}
+/* .nav-image2 img{
+    height: 8rem;
+    width:25rem;
+} */
+/* .nav-links{
+      margin-left:25rem;
+      margin-top:-5rem;
+}
+.nav-links li
+{
+    float:left;
+    list-style-type: none;
+    margin-left:2rem;
+    font-size:1.3rem;
+} */
+.nav-links a{
+    text-decoration: none;
+}
+.nav-links input[type=text] {
+  padding-top:2px;
+  padding-bottom:2px;
+  font-size: 19px;
+} 
+/* Footer part CSS */
+/* Class selector */
+
+.partnership{
+    background-color:rgb(171, 95, 238);
+    margin-top:5rem;
+    margin-left:3rem;
+    width:18rem;
+    height:24rem;
+    margin-bottom: 5rem;
+    border-radius:1.035rem;
+    color:whitesmoke;
+    float:left;
+}
+.partnership h1{
+    padding:2rem;
+    text-align:center;
+    
+}
+.partnership h3{
+    text-align: center;
+    padding:2rem;
+}
+
+.stars{
+    text-align: center;
+}
+/* id selector */
+#textarea{
+    margin-left:2.5rem;
+    margin-top:1rem;
+}
+.footer{
+    background-color: aqua;
+}
+.column {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    padding: 20px;
+    margin-top: 1em;
+    border-top: 1px solid black;
+
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: .5s ease;
+    
+}
+
+
+.column img{
+    border-radius: 10px;
+    opacity: 0.7;
+}
+#section-c{
+    background-color: rgb(205, 171, 154,0.2);
+}
+.text {
+    font-weight: bolder;
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.logo{
+    top:95%
+}

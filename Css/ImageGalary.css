@@ -1,0 +1,29 @@
+*{
+    font-family:sans-serif;
+}
+h1{
+    text-align:center;
+    font-size:7rem;
+}
+.galary{
+    column-width:12rem;
+    column-span:1.4rem;
+    margin-left:4.5rem;
+    padding:2rem;
+    align-items: center;
+    
+}
+.galary img{
+    height:13rem;
+    width:13rem;
+    padding:1rem;
+    filter:grayscale(100%);
+    transition:1s ease-in-out;
+}
+.galary img:hover{
+   filter:grayscale(0%);
+   transform:scale(1.2);
+}
+body{
+    background-color: darkgoldenrod;
+}
